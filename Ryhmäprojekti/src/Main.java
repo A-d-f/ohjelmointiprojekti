@@ -6,8 +6,8 @@ public class Main {
 		
 //		  for (int i = 0 ; i < 1000; i++) { //looppi tietojen vientiä varten
 //		  tietovienti.vietieto(); } 
-		//
-		 
+		//,o
+		 //PUSH
 		
 		
 		Scanner in=new Scanner(System.in);
