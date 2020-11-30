@@ -7,11 +7,11 @@ public class Main {
 		Scanner in=new Scanner(System.in);
 		String vastaus;
 		tulostaOtsikko();
-		database.tiedot();
-		System.out.println(" ");
-		System.out.println("Haluatko tilata sämpylän?(k/e)?");
+		tietotuonti.tiedot();
+		System.out.println("\n" + "Haluatko tilata sämpylän?(k/e)?");
 		vastaus=in.nextLine();
-		System.out.println();
+		
+		
 	}
 	
 	

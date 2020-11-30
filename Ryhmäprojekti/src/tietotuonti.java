@@ -5,7 +5,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Scanner;
 
-public class database {
+public class tietotuonti {
 static Connection connection = null; 
 static Statement statement = null;  
 static ResultSet resultSet = null;
@@ -37,7 +37,7 @@ try {
 	resultSet = statement.executeQuery(querySelect);
 	
 	// 4. Vastauksen käsittely
-	System.out.println("ID\tNIMI\t\tHINTA\tKALORIT");
+	System.out.println("Num\tNimi\t\tHinta\tKalorit");
 	
 	while (resultSet.next()) {
 		
