@@ -4,12 +4,17 @@ public class Main {
 
 	public static void main(String[] args) {
 		
+		  //for (int i = 0 ; i < 1000; i++) { //looppi tietojen vientiä varten
+		  //tietovienti.vietieto(); } 
+		
+		
 		Scanner in=new Scanner(System.in);
 		String vastaus;
 		tulostaOtsikko();
 		tietotuonti.tiedot();
-		System.out.println("\n" + "Haluatko tilata sÃ¤mpylÃ¤n?(k/e)?");
+		System.out.println("\n" + "Haluatko tilata sämpylän?(k/e)?");
 		vastaus=in.nextLine();
+		
 		
 	}
 	
@@ -25,7 +30,7 @@ public static void tulostaOtsikko() {
 				" |____|    (____  /__|  \\____/|___|  /__|_ \\__|____/____/ \\____/|____(____  /\r\n" + 
 				"                \\/                 \\/     \\/                              \\/");
 }
-} //Main pÃ¤Ã¤ttyy
+} //Main päättyy
 
 
 
