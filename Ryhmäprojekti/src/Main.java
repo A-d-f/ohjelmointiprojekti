@@ -7,10 +7,8 @@ public class Main {
 		Scanner in=new Scanner(System.in);
 		String vastaus;
 		tulostaOtsikko();
-		
-		
-		System.out.println(" ");
-		System.out.println("Haluatko tilata s‰mpyl‰n?(k/e)?");
+		tietotuonti.tiedot();
+		System.out.println("\n" + "Haluatko tilata s√§mpyl√§n?(k/e)?");
 		vastaus=in.nextLine();
 		
 	}
@@ -27,7 +25,7 @@ public static void tulostaOtsikko() {
 				" |____|    (____  /__|  \\____/|___|  /__|_ \\__|____/____/ \\____/|____(____  /\r\n" + 
 				"                \\/                 \\/     \\/                              \\/");
 }
-} //Main p‰‰ttyy
+} //Main p√§√§ttyy
 
 
 
