@@ -4,11 +4,9 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-//		  for (int i = 0 ; i < 1000; i++) { //looppi tietojen vientiä varten
-//		  tietovienti.vietieto(); } 
-		//,o
-		 //PUSH
-		//?====
+		  //for (int i = 0 ; i < 1000; i++) { //looppi tietojen vientiä varten
+		  //tietovienti.vietieto(); } 
+		
 		
 		Scanner in=new Scanner(System.in);
 		String vastaus;
