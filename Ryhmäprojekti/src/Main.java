@@ -19,5 +19,9 @@ public class Main {
 		vastaus=in.nextLine();
 		
 	}
+	
+	public static void TulostaTaytteet() {
+		//tietokannassa olevien s‰mpyl‰/t‰yte/kastikevaihtoehtojen tulostus t‰h‰n
+	}
 
 } //Main p‰‰ttyy
