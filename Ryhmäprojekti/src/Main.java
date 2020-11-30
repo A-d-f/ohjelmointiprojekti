@@ -8,7 +8,7 @@ public class Main {
 //		  tietovienti.vietieto(); } 
 		//,o
 		 //PUSH
-		
+		//?====
 		
 		Scanner in=new Scanner(System.in);
 		String vastaus;
