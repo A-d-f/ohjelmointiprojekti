@@ -1,0 +1,67 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.Scanner;
+
+public class database {
+static Connection connection = null; 
+static Statement statement = null;  
+static ResultSet resultSet = null;
+
+// Yhteyden tiedot
+static String db = "trtkp20a3";
+static String url = "jdbc:mysql://shell.hamk.fi/"+db+"?useSSL=false";
+static String username = "trtkp20a3";
+static String password = "trtkp20a3passwd";
+
+// Tietokannan taulun kentät tulostusta varten
+private static int tuote_id;
+private static String nimi;
+private static int hinta;
+private static int kalorit;
+
+public static void tiedot() {
+try {
+	
+	// 1. yhteys
+	connection = DriverManager.getConnection(url, username, password);
+	
+	// 2. MySQL-kysely
+	statement = connection.createStatement();
+
+	String querySelect = "SELECT * FROM ryhmä10_taulu";
+	
+	// 3. Suoritetaan kysely
+	resultSet = statement.executeQuery(querySelect);
+	
+	// 4. Vastauksen käsittely
+	System.out.println("ID\tNIMI\t\tHINTA\tKALORIT");
+	
+	while (resultSet.next()) {
+		
+		tuote_id = resultSet.getInt("tuote_id");
+		nimi = resultSet.getString("nimi");
+		hinta = resultSet.getInt("hinta");
+		kalorit = resultSet.getInt("kalorit");
+		System.out.println(tuote_id + "\t" + nimi + "\t" + hinta + "\t" + kalorit);
+	}
+		
+	
+	
+} 
+catch (Exception ex) {
+	ex.printStackTrace();
+}
+finally {
+	// 5. Yhteyden sulkeminen ja kyselyjen nollaus
+	if (resultSet != null) try { resultSet.close(); } catch (SQLException ignore) {}
+	if (statement != null) try { statement.close(); } catch (SQLException ignore) {}
+    if (connection != null) try { connection.close(); } catch (SQLException ignore) {}
+}
+
+	
+}}
+
+
