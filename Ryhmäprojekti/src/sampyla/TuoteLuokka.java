@@ -39,9 +39,9 @@ class Tayte extends TuoteLuokka {
 		tuoteryhma=2;
 	}
 	public Tayte(String n, int h, int k) {
-		hinta=0;
-		kalorit=0;
-		nimi="";
+		hinta=h;
+		kalorit=k;
+		nimi=n;
 		tuoteryhma=2;
 	}
 }
@@ -53,9 +53,9 @@ class LisaTayte extends TuoteLuokka {
 		tuoteryhma=3;
 	}
 	public LisaTayte(String n, int h, int k) {
-		hinta=0;
-		kalorit=0;
-		nimi="";
+		hinta=h;
+		kalorit=k;
+		nimi=n;
 		tuoteryhma=3;
 	}
 }
@@ -67,9 +67,9 @@ class Juoma extends TuoteLuokka {
 		tuoteryhma=4;
 	}
 	public Juoma(String n, int h, int k) {
-		hinta=0;
-		kalorit=0;
-		nimi="";
+		hinta=h;
+		kalorit=k;
+		nimi=n;
 		tuoteryhma=4;
 	}
 }	
