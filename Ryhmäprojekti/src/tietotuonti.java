@@ -21,6 +21,7 @@ private static int tuote_id;
 private static String nimi;
 private static int hinta;
 private static int kalorit;
+private static int tuoteryhma;
 
 public static void tiedot() {
 try {
@@ -45,7 +46,8 @@ try {
 		nimi = resultSet.getString("nimi");
 		hinta = resultSet.getInt("hinta");
 		kalorit = resultSet.getInt("kalorit");
-		System.out.println(tuote_id + "\t" + nimi + "\t" + hinta + "\t" + kalorit);
+		tuoteryhma = resultSet.getInt("tuoteryhma");
+		System.out.println(tuote_id + "\t" + nimi + "\t" + hinta + "\t" + kalorit + tuoteryhma);
 	}
 		
 	
