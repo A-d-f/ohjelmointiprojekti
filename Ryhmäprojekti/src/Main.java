@@ -4,26 +4,46 @@ import sampyla.SampylaLuokka;
 
 
 public class Main {
-
 	public static void main(String[] args) {
-
-		
-		  for (int i = 0 ; i < 1000; i++) { //looppi tietojen vientiÃ¤ varten
-		  tietovienti.vietieto(); } 
-		
-		
 		Scanner in=new Scanner(System.in);
-
 		String vastaus;
-		tulostaOtsikko();
+		
+		
+		
+		tietotuonti.set = 1;
 		tietotuonti.tiedot();
+		System.out.println("valitse leipä");
+		vastaus=in.nextLine();
+		
+		
+		tietotuonti.set = 2;
+		tietotuonti.tiedot();
+		System.out.println("Valitse täyte");
+		vastaus=in.nextLine();
+//		  for (int i = 0 ; i < 1000; i++) { //looppi tietojen vientiÃ¤ varten
+//		  tietovienti.vietieto(); } 
+		
+		tulostaOtsikko();
+		
 		System.out.println("\n" + "Haluatko tilata sämpylän?(k/e)?");
+		
+		
+		
+		
+		
+		
+		
 		vastaus = in.nextLine();
 		if (vastaus.equalsIgnoreCase("k")) {
-		
+		System.out.println("tilaa");
+		} else {
+			System.out.println("ei sitten");
 		}
-
+		
+		
 	}
+	
+
 
 	public static void tulostaOtsikko() {
 		System.out.println("__________         __                 __   .__.__               .__          \r\n"
