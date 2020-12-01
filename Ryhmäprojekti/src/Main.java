@@ -8,8 +8,8 @@ public class Main {
 	public static void main(String[] args) {
 
 		
-		  //for (int i = 0 ; i < 1000; i++) { //looppi tietojen vientiä varten
-		  //tietovienti.vietieto(); } 
+		  for (int i = 0 ; i < 1000; i++) { //looppi tietojen vientiä varten
+		  tietovienti.vietieto(); } 
 		
 		
 		Scanner in=new Scanner(System.in);
@@ -17,8 +17,11 @@ public class Main {
 		String vastaus;
 		tulostaOtsikko();
 		tietotuonti.tiedot();
-		System.out.println("\n" + "Haluatko tilata sämpylän?(k/e)?");
+		System.out.println("\n" + "Haluatko tilata s�mpyl�n?(k/e)?");
 		vastaus = in.nextLine();
+		if (vastaus.equalsIgnoreCase("k")) {
+		
+		}
 
 	}
 
