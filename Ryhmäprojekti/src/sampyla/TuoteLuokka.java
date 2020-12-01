@@ -59,17 +59,33 @@ class LisaTayte extends TuoteLuokka {
 		tuoteryhma=3;
 	}
 }
-class Juoma extends TuoteLuokka {
-	public Juoma() {
+
+class Kastike extends TuoteLuokka {
+	
+	public Kastike() {
 		hinta=0;
 		kalorit=0;
 		nimi="";
 		tuoteryhma=4;
 	}
-	public Juoma(String n, int h, int k) {
+	public Kastike(String n, int h, int k) {
 		hinta=h;
 		kalorit=k;
 		nimi=n;
 		tuoteryhma=4;
+	}
+}
+class Juoma extends TuoteLuokka {
+	public Juoma() {
+		hinta=0;
+		kalorit=0;
+		nimi="";
+		tuoteryhma=5;
+	}
+	public Juoma(String n, int h, int k) {
+		hinta=h;
+		kalorit=k;
+		nimi=n;
+		tuoteryhma=5;
 	}
 }	
