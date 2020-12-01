@@ -2,7 +2,7 @@ import java.io.FileWriter;
 
 public class Kuitti {
 
-	String kuitti = "src/resources/kuitti.txt";
+	static String kuitti = "src/resources/kuitti.txt";
 	
 	// int veloitus= ostosten hintojen haku tietokannasta
 	//tämä mainiin? tulostaTiedostoon("Ostot:\n " +  + " . Summa: " + veloitus + "€.");
