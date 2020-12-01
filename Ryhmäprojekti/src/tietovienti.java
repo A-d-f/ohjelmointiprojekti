@@ -23,11 +23,15 @@ public static void vietieto() {
 		String nimi;
 		int hinta;		
 		int kalorit;
+		int tuoteryhma;
 		
 		Scanner in = new Scanner(System.in);
 		
 		System.out.println("Anna tuotteen nimi");
 		nimi  = in.nextLine();
+		
+		System.out.println("Anna tuoteryhmä 1: Leipä	2: Täyte	3: Jotain");
+		tuoteryhma  = Integer.parseInt(in.nextLine());
 		
 		System.out.println("Anna tuotteen hinta");
 		hinta = Integer.parseInt(in.nextLine());
@@ -46,7 +50,7 @@ public static void vietieto() {
 			// 2. MySQL-kysely
 			statement = connection.createStatement();
 
-			String queryInsert =  "INSERT INTO ryhmä10_taulu (nimi,hinta,kalorit) VALUES ('"+nimi+"','"+hinta+"',"+kalorit+")";
+			String queryInsert =  "INSERT INTO ryhmä10_taulu (tuoteryhma,nimi,hinta,kalorit) VALUES ('"+tuoteryhma+"','"+nimi+"','"+hinta+"',"+kalorit+")";
 			
 			
 			// 3. Suoritetaan kysely
