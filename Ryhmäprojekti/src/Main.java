@@ -1,7 +1,5 @@
 import java.util.Scanner;
 
-import sampyla.SampylaLuokka;
-
 
 public class Main {
 
