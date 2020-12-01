@@ -1,5 +1,8 @@
 import java.util.Scanner;
 
+import sampyla.SampylaLuokka;
+
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -15,7 +18,6 @@ public class Main {
 		tulostaOtsikko();
 		tietotuonti.tiedot();
 		System.out.println("\n" + "Haluatko tilata sämpylän?(k/e)?");
-
 		vastaus = in.nextLine();
 
 	}
