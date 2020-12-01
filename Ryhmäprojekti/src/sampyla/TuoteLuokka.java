@@ -1,12 +1,14 @@
 package sampyla;
 
 public class TuoteLuokka {
+	protected int tuoteID;
 	protected int hinta;
 	protected int kalorit;
 	protected String nimi;
 	protected int tuoteryhma;
 
 	public TuoteLuokka() {
+		tuoteID=0;
 		hinta=0;
 		kalorit=0;
 		nimi="";
@@ -17,12 +19,14 @@ public class TuoteLuokka {
 class Leipa extends TuoteLuokka {
 	 
 	public Leipa() {
+		tuoteID=0;
 		hinta=0;
 		kalorit=0;
 		nimi="";
 		tuoteryhma=1;
 	}
-	public Leipa(String n, int h, int k) {
+	public Leipa(int ID,String n, int h, int k) {
+		tuoteID=ID;
 		hinta=h;
 		kalorit=k;
 		nimi=n;
@@ -33,12 +37,14 @@ class Leipa extends TuoteLuokka {
 class Tayte extends TuoteLuokka {
 	
 	public Tayte() {
+		tuoteID=0;
 		hinta=0;
 		kalorit=0;
 		nimi="";
 		tuoteryhma=2;
 	}
-	public Tayte(String n, int h, int k) {
+	public Tayte(int ID,String n, int h, int k) {
+		tuoteID=ID;
 		hinta=h;
 		kalorit=k;
 		nimi=n;
@@ -47,12 +53,14 @@ class Tayte extends TuoteLuokka {
 }
 class LisaTayte extends TuoteLuokka {
 	public LisaTayte() {
+		tuoteID=0;
 		hinta=0;
 		kalorit=0;
 		nimi="";
 		tuoteryhma=3;
 	}
-	public LisaTayte(String n, int h, int k) {
+	public LisaTayte(int ID,String n, int h, int k) {
+		tuoteID=ID;
 		hinta=h;
 		kalorit=k;
 		nimi=n;
@@ -63,12 +71,14 @@ class LisaTayte extends TuoteLuokka {
 class Kastike extends TuoteLuokka {
 	
 	public Kastike() {
+		tuoteID=0;
 		hinta=0;
 		kalorit=0;
 		nimi="";
 		tuoteryhma=4;
 	}
-	public Kastike(String n, int h, int k) {
+	public Kastike(int ID,String n, int h, int k) {
+		tuoteID=ID;
 		hinta=h;
 		kalorit=k;
 		nimi=n;
@@ -77,12 +87,14 @@ class Kastike extends TuoteLuokka {
 }
 class Juoma extends TuoteLuokka {
 	public Juoma() {
+		tuoteID=0;
 		hinta=0;
 		kalorit=0;
 		nimi="";
 		tuoteryhma=5;
 	}
-	public Juoma(String n, int h, int k) {
+	public Juoma(int ID,String n, int h, int k) {
+		tuoteID=ID;
 		hinta=h;
 		kalorit=k;
 		nimi=n;
