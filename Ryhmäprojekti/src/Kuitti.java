@@ -8,7 +8,7 @@ public class Kuitti {
 	//tämä mainiin? tulostaTiedostoon("Ostot:\n " +  + " . Summa: " + veloitus + "€.");
 	
 	
-	public void tulostaTiedostoon(String txt, String kuitti) {
+	public static void tulostaTiedostoon(String txt) {
 
 		try {
 			java.util.Date date = new java.util.Date();
