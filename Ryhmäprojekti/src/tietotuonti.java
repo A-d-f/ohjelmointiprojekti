@@ -23,10 +23,26 @@ private static String nimi;
 private static int hinta;
 private static int kalorit;
 private static int tuoteryhma;
+private static String nimi1;
+private static int hinta1;
+private static int kalorit1;
+
 
 static String valinta;
 static String valitse;
 
+public static int gethinta() {
+	int getHinta= hinta1;
+	return getHinta;
+}
+public static int getKalorit() {
+	int getKalorit= kalorit1;
+	return getKalorit;
+}
+public static String getNimi() {
+	String getNimi= nimi1;
+	return getNimi;
+}
 
 
 public static void tiedot() {
@@ -104,11 +120,11 @@ try {
 	while (resultSet.next()) {
 		
 		tuote_id = resultSet.getInt("tuote_id");
-		nimi = resultSet.getString("nimi");
-		hinta = resultSet.getInt("hinta");
-		kalorit = resultSet.getInt("kalorit");
+		nimi1 = resultSet.getString("nimi");
+		hinta1 = resultSet.getInt("hinta");
+		kalorit1 = resultSet.getInt("kalorit");
 		tuoteryhma = resultSet.getInt("tuoteryhma");
-		System.out.println(tuote_id + "\t" + nimi + "\t" + hinta + "\t" + kalorit);
+		System.out.println(tuote_id + "\t" + nimi1 + "\t" + hinta1 + "\t" + kalorit1);
 	}
 	
 	
