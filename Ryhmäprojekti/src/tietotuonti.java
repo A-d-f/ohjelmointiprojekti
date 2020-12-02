@@ -43,12 +43,13 @@ try {
 	
 	
 	
-	
 	// 3. Suoritetaan kysely
 	resultSet = statement.executeQuery(querySelect);
+
 	
 	// 4. Vastauksen käsittely
 	System.out.println("Num\tNimi\t\tHinta\tKalorit");
+	
 	
 	while (resultSet.next()) {
 		
