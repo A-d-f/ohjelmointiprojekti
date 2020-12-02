@@ -1,4 +1,4 @@
-package sampyla;
+
 
 public class TuoteLuokka {
 	protected int tuoteID;
@@ -13,7 +13,11 @@ public class TuoteLuokka {
 		kalorit=0;
 		nimi="";
 		tuoteryhma=0;
+		
+		
+		
 		}
+	
 	
 }
 class Leipa extends TuoteLuokka {
@@ -32,7 +36,9 @@ class Leipa extends TuoteLuokka {
 		nimi=n;
 		tuoteryhma=1;
 	}
-	
+	public void tulosta() {
+		System.out.println(tuoteID + " " + hinta + " " + kalorit + " " + nimi + " " + tuoteryhma);
+	}
 }
 class Tayte extends TuoteLuokka {
 	
