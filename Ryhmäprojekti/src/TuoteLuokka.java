@@ -76,8 +76,10 @@ class LisaTayte extends TuoteLuokka {
 		nimi=n;
 		tuoteryhma=3;
 	}
+	public void tulosta() {
+		System.out.println(tuoteID + " " + hinta + " " + kalorit + " " + nimi + " " + tuoteryhma + "\n");
 }
-
+}
 class Kastike extends TuoteLuokka {
 	
 	public Kastike() {
@@ -94,6 +96,9 @@ class Kastike extends TuoteLuokka {
 		nimi=n;
 		tuoteryhma=4;
 	}
+	public void tulosta() {
+		System.out.println(tuoteID + " " + hinta + " " + kalorit + " " + nimi + " " + tuoteryhma + "\n");
+}
 }
 class Juoma extends TuoteLuokka {
 	public Juoma() {
@@ -110,4 +115,7 @@ class Juoma extends TuoteLuokka {
 		nimi=n;
 		tuoteryhma=5;
 	}
+	public void tulosta() {
+		System.out.println(tuoteID + " " + hinta + " " + kalorit + " " + nimi + " " + tuoteryhma + "\n");
+}
 }	

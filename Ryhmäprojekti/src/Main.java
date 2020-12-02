@@ -20,9 +20,9 @@ public class Main {
 		System.out.println("Valinta:");
 		tietotuonti.tiedot1();
 		System.out.println("\n");
-		Leipa leipä = new Leipa(id, n = tietotuonti.getNimi(), h = tietotuonti.gethinta(), k =tietotuonti.getKalorit());
-		//leipä.tulosta();
-		int leipäkalorit = k;
+		Leipa leipa = new Leipa(id, n = tietotuonti.getNimi(), h = tietotuonti.gethinta(), k =tietotuonti.getKalorit());
+		//leipa.tulosta();
+		int leipakalorit = k;
 		
 		tietotuonti.set = 2;
 		tietotuonti.tiedot();
@@ -36,7 +36,50 @@ public class Main {
 		
 		Tayte tayte = new Tayte(id, n = tietotuonti.getNimi(), h = tietotuonti.gethinta(), k =tietotuonti.getKalorit());
 		//tayte.tulosta();
-		int täytekalorit = k;
+		int taytekalorit = k;
+		
+		tietotuonti.set = 3;
+		tietotuonti.tiedot();
+		System.out.println("Valitse lisätäyte");
+		
+		valinta=Integer.parseInt(in.nextLine());
+		id = valinta;
+		tietotuonti.asetaValinta = id;
+		System.out.println("Valinta:");
+		tietotuonti.tiedot1();
+		
+		LisaTayte lisatayte = new LisaTayte(id, n = tietotuonti.getNimi(), h = tietotuonti.gethinta(), k =tietotuonti.getKalorit());
+		//lisatayte.tulosta();
+		int lisataytekalorit = k;
+		
+		tietotuonti.set = 4;
+		tietotuonti.tiedot();
+		System.out.println("Valitse lisätäyte");
+		
+		valinta=Integer.parseInt(in.nextLine());
+		id = valinta;
+		tietotuonti.asetaValinta = id;
+		System.out.println("Valinta:");
+		tietotuonti.tiedot1();
+		
+		Kastike kastike = new Kastike(id, n = tietotuonti.getNimi(), h = tietotuonti.gethinta(), k =tietotuonti.getKalorit());
+		//kastike.tulosta();
+		int kastikekalorit = k;
+		
+		tietotuonti.set = 5;
+		tietotuonti.tiedot();
+		System.out.println("Valitse lisätäyte");
+		
+		valinta=Integer.parseInt(in.nextLine());
+		id = valinta;
+		tietotuonti.asetaValinta = id;
+		System.out.println("Valinta:");
+		tietotuonti.tiedot1();
+		
+		Juoma juoma = new Juoma(id, n = tietotuonti.getNimi(), h = tietotuonti.gethinta(), k =tietotuonti.getKalorit());
+		//juoma.tulosta();
+		int juomakalorit = k;
+		
 		
 		//System.out.println("leipä: " + leipäkalorit + " täyte : " + täytekalorit + " yht: " + (leipäkalorit+täytekalorit));
 		
