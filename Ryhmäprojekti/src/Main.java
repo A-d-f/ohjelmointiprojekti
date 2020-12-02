@@ -23,6 +23,8 @@ public class Main {
 		Leipa leipa = new Leipa(id, n = tietotuonti.getNimi(), h = tietotuonti.gethinta(), k =tietotuonti.getKalorit());
 		//leipa.tulosta();
 		int leipakalorit = k;
+		int leipah=h;
+		String leipaname = n;
 		
 		tietotuonti.set = 2;
 		tietotuonti.tiedot();
@@ -37,6 +39,8 @@ public class Main {
 		Tayte tayte = new Tayte(id, n = tietotuonti.getNimi(), h = tietotuonti.gethinta(), k =tietotuonti.getKalorit());
 		//tayte.tulosta();
 		int taytekalorit = k;
+		int tayteh = h;
+		String taytename = n;
 		
 		tietotuonti.set = 3;
 		tietotuonti.tiedot();
@@ -51,10 +55,12 @@ public class Main {
 		LisaTayte lisatayte = new LisaTayte(id, n = tietotuonti.getNimi(), h = tietotuonti.gethinta(), k =tietotuonti.getKalorit());
 		//lisatayte.tulosta();
 		int lisataytekalorit = k;
+		int lisatayteh = h;
+		String lisataytename = n;
 		
 		tietotuonti.set = 4;
 		tietotuonti.tiedot();
-		System.out.println("Valitse lisätäyte");
+		System.out.println("Valitse kastike");
 		
 		valinta=Integer.parseInt(in.nextLine());
 		id = valinta;
@@ -65,10 +71,12 @@ public class Main {
 		Kastike kastike = new Kastike(id, n = tietotuonti.getNimi(), h = tietotuonti.gethinta(), k =tietotuonti.getKalorit());
 		//kastike.tulosta();
 		int kastikekalorit = k;
+		int kastikeh = h;
+		String kastikename = n;
 		
 		tietotuonti.set = 5;
 		tietotuonti.tiedot();
-		System.out.println("Valitse lisätäyte");
+		System.out.println("Valitse juoma");
 		
 		valinta=Integer.parseInt(in.nextLine());
 		id = valinta;
@@ -79,6 +87,8 @@ public class Main {
 		Juoma juoma = new Juoma(id, n = tietotuonti.getNimi(), h = tietotuonti.gethinta(), k =tietotuonti.getKalorit());
 		//juoma.tulosta();
 		int juomakalorit = k;
+		int juomah = h;
+		String juomaname = n;
 		
 		
 		//System.out.println("leipä: " + leipäkalorit + " täyte : " + täytekalorit + " yht: " + (leipäkalorit+täytekalorit));
@@ -92,6 +102,8 @@ public class Main {
 		vastaus = in.nextLine();
 		if (vastaus.equalsIgnoreCase("k")) {
 		System.out.println("tilaa");
+		Kuitti.tulostaTiedostoon(" Ostot: \n" + leipaname+ "\t\t"+leipah+",-\n"+taytename+"\t\t"+tayteh+",-\n"+lisataytename+"\t\t"+lisatayteh+",-\n"+kastikename+"\t\t"+kastikeh+",-\n"+juomaname+"\t\t"+juomah+ ",-\nVeloitettu:\t\t"+ (leipah+ tayteh+lisatayteh+kastikeh+juomah)
+		+ "€.");
 		} else {
 			System.out.println("ei sitten");
 		}
