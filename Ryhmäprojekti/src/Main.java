@@ -19,9 +19,9 @@ public class Main {
 		tietotuonti.asetaValinta = id;
 		System.out.println("Valinta:");
 		tietotuonti.tiedot1();
-		
+		System.out.println("\n");
 		Leipa leipä = new Leipa(id, n = tietotuonti.getNimi(), h = tietotuonti.gethinta(), k =tietotuonti.getKalorit());
-		leipä.tulosta();
+		//leipä.tulosta();
 		int leipäkalorit = k;
 		
 		tietotuonti.set = 2;
@@ -35,10 +35,10 @@ public class Main {
 		tietotuonti.tiedot1();
 		
 		Tayte tayte = new Tayte(id, n = tietotuonti.getNimi(), h = tietotuonti.gethinta(), k =tietotuonti.getKalorit());
-		tayte.tulosta();
+		//tayte.tulosta();
 		int täytekalorit = k;
 		
-		System.out.println("leipä: " + leipäkalorit + " täyte : " + täytekalorit + " yht: " + (leipäkalorit+täytekalorit));
+		//System.out.println("leipä: " + leipäkalorit + " täyte : " + täytekalorit + " yht: " + (leipäkalorit+täytekalorit));
 		
 //		  for (int i = 0 ; i < 1000; i++) { //looppi tietojen vientiÃ¤ varten
 //		  tietovienti.vietieto(); } 
