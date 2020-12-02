@@ -5,13 +5,25 @@ public class Main {
 	public static void main(String[] args) {
 		Scanner in=new Scanner(System.in);
 		String vastaus;
-		
+		int valinta;
+		String id = "Jtn";
+		int n, h, k;
+		h = 0;
+		k = 0;
 		
 		
 		tietotuonti.set = 1;
 		tietotuonti.tiedot();
 		System.out.println("valitse leipä");
-		vastaus=in.nextLine();
+		valinta=Integer.parseInt(in.nextLine());
+		n = valinta;
+		tietotuonti.asetaValinta = n;
+		System.out.println("Valinta:");
+		tietotuonti.tiedot1();
+		System.out.println("\n");
+		Leipa leipa = new Leipa(n, id, h, k);
+		leipa.tulosta();
+		
 		
 		
 		tietotuonti.set = 2;
@@ -22,14 +34,7 @@ public class Main {
 //		  tietovienti.vietieto(); } 
 		
 		tulostaOtsikko();
-		
 		System.out.println("\n" + "Haluatko tilata sämpylän?(k/e)?");
-		
-		
-		
-		
-		
-		
 		
 		vastaus = in.nextLine();
 		if (vastaus.equalsIgnoreCase("k")) {
