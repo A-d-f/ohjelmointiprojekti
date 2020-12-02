@@ -6,34 +6,44 @@ public class Main {
 		Scanner in=new Scanner(System.in);
 		String vastaus;
 		int valinta;
-		String id = "Jtn";
-		int n, h, k;
-		h = 0;
-		k = 0;
+		String n;
+		int id, h, k;
 		
+		tulostaOtsikko();
 		
 		tietotuonti.set = 1;
 		tietotuonti.tiedot();
 		System.out.println("valitse leipä");
 		valinta=Integer.parseInt(in.nextLine());
-		n = valinta;
-		tietotuonti.asetaValinta = n;
+		id = valinta;
+		tietotuonti.asetaValinta = id;
 		System.out.println("Valinta:");
 		tietotuonti.tiedot1();
 		System.out.println("\n");
-		Leipa leipa = new Leipa(n, id, h, k);
-		leipa.tulosta();
-		
-		
+		Leipa leipä = new Leipa(id, n = tietotuonti.getNimi(), h = tietotuonti.gethinta(), k =tietotuonti.getKalorit());
+		//leipä.tulosta();
+		int leipäkalorit = k;
 		
 		tietotuonti.set = 2;
 		tietotuonti.tiedot();
 		System.out.println("Valitse täyte");
-		vastaus=in.nextLine();
+		
+		valinta=Integer.parseInt(in.nextLine());
+		id = valinta;
+		tietotuonti.asetaValinta = id;
+		System.out.println("Valinta:");
+		tietotuonti.tiedot1();
+		
+		Tayte tayte = new Tayte(id, n = tietotuonti.getNimi(), h = tietotuonti.gethinta(), k =tietotuonti.getKalorit());
+		//tayte.tulosta();
+		int täytekalorit = k;
+		
+		//System.out.println("leipä: " + leipäkalorit + " täyte : " + täytekalorit + " yht: " + (leipäkalorit+täytekalorit));
+		
 //		  for (int i = 0 ; i < 1000; i++) { //looppi tietojen vientiÃ¤ varten
 //		  tietovienti.vietieto(); } 
 		
-		tulostaOtsikko();
+		
 		System.out.println("\n" + "Haluatko tilata sämpylän?(k/e)?");
 		
 		vastaus = in.nextLine();
