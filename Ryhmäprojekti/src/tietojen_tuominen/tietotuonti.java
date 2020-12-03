@@ -1,3 +1,5 @@
+package tietojen_tuominen;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -9,8 +11,8 @@ public class tietotuonti {
 static Connection connection = null; 
 static Statement statement = null;  
 static ResultSet resultSet = null;
-static int set;
-static int asetaValinta;
+public static int set;
+public static int asetaValinta;
 // Yhteyden tiedot
 static String db = "trtkp20a3";
 static String url = "jdbc:mysql://shell.hamk.fi/"+db+"?useSSL=false";

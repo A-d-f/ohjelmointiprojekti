@@ -1,3 +1,4 @@
+package otsikko;
 
 public class Otsikko {
 	public static void tulostaOtsikko() {
