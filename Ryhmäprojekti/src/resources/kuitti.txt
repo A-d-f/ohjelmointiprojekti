@@ -12,3 +12,24 @@ lisäpekoni		1,-
 south west		0,-
 kossuvissy		2,-
 Veloitettu:		11€.
+Thu Dec 03 09:43:20 EET 2020 Ostot: 
+Vaalea Leipä		5,-
+kanafile		2,-
+lisäpekoni		1,-
+valkosipulikastike		0,-
+kossuvissy		2,-
+Veloitettu:		10€.
+Thu Dec 03 09:43:56 EET 2020 Ostot: 
+Vaalea Leipä		5,-
+kanafile		2,-
+lisäpekoni		1,-
+valkosipulikastike		0,-
+coca-cola		2,-
+Veloitettu:		10€.
+Thu Dec 03 10:19:58 EET 2020 Ostot: 
+Vaalea Leipä		5,-
+kanafile		2,-
+lisäpekoni		1,-
+valkosipulikastike		0,-
+coca-cola		2,-
+Veloitettu:		10€.
