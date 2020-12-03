@@ -1,5 +1,11 @@
 import java.util.Scanner;
 
+import kuitti.Kuitti;
+import otsikko.Otsikko;
+import tietojen_tuominen.tietotuonti;
+import tuoteluokat.*;
+import yll‰pito.Kirjautuminen;
+
 
 public class Main {
 	public static void main(String[] args) {
@@ -9,11 +15,23 @@ public class Main {
 		String n;
 		int id, h, k;
 		
+		
+		System.out.println("Tuletko asiakkaana(a) vai yll‰pit‰j‰n‰(y)?");
+		vastaus=in.nextLine();
+		
+		if (vastaus.equalsIgnoreCase("y")) {
+			
+			Kirjautuminen.tiedot();
+			//t‰h‰n v‰liin kirjautuminen
+			
+		
+		}else {
 		Otsikko.tulostaOtsikko();
+		
 		
 		tietotuonti.set = 1;
 		tietotuonti.tiedot();
-		System.out.println("valitse leip‰");
+		System.out.println("valitse leiv‰n numero");
 		valinta=Integer.parseInt(in.nextLine());
 		id = valinta;
 		tietotuonti.asetaValinta = id;
@@ -28,13 +46,14 @@ public class Main {
 		
 		tietotuonti.set = 2;
 		tietotuonti.tiedot();
-		System.out.println("Valitse t‰yte");
+		System.out.println("Valitse t‰ytteen numero");
 		
 		valinta=Integer.parseInt(in.nextLine());
 		id = valinta;
 		tietotuonti.asetaValinta = id;
 		System.out.println("Valinta:");
 		tietotuonti.tiedot1();
+		System.out.println("\n");
 		
 		Tayte tayte = new Tayte(id, n = tietotuonti.getNimi(), h = tietotuonti.gethinta(), k =tietotuonti.getKalorit());
 		//tayte.tulosta();
@@ -44,13 +63,14 @@ public class Main {
 		
 		tietotuonti.set = 3;
 		tietotuonti.tiedot();
-		System.out.println("Valitse lis‰t‰yte");
+		System.out.println("Valitse lis‰t‰ytteen numero");
 		
 		valinta=Integer.parseInt(in.nextLine());
 		id = valinta;
 		tietotuonti.asetaValinta = id;
 		System.out.println("Valinta:");
 		tietotuonti.tiedot1();
+		System.out.println("\n");
 		
 		LisaTayte lisatayte = new LisaTayte(id, n = tietotuonti.getNimi(), h = tietotuonti.gethinta(), k =tietotuonti.getKalorit());
 		//lisatayte.tulosta();
@@ -60,13 +80,14 @@ public class Main {
 		
 		tietotuonti.set = 4;
 		tietotuonti.tiedot();
-		System.out.println("Valitse kastike");
+		System.out.println("Valitse kastikkeen numero");
 		
 		valinta=Integer.parseInt(in.nextLine());
 		id = valinta;
 		tietotuonti.asetaValinta = id;
 		System.out.println("Valinta:");
 		tietotuonti.tiedot1();
+		System.out.println("\n");
 		
 		Kastike kastike = new Kastike(id, n = tietotuonti.getNimi(), h = tietotuonti.gethinta(), k =tietotuonti.getKalorit());
 		//kastike.tulosta();
@@ -76,13 +97,14 @@ public class Main {
 		
 		tietotuonti.set = 5;
 		tietotuonti.tiedot();
-		System.out.println("Valitse juoma");
+		System.out.println("Valitse juoman numero");
 		
 		valinta=Integer.parseInt(in.nextLine());
 		id = valinta;
 		tietotuonti.asetaValinta = id;
 		System.out.println("Valinta:");
 		tietotuonti.tiedot1();
+		System.out.println("\n");
 		
 		Juoma juoma = new Juoma(id, n = tietotuonti.getNimi(), h = tietotuonti.gethinta(), k =tietotuonti.getKalorit());
 		//juoma.tulosta();
@@ -102,16 +124,17 @@ public class Main {
 		vastaus = in.nextLine();
 		if (vastaus.equalsIgnoreCase("k")) {
 		System.out.println("tilaa");
+		System.out.println("Ostoksesi tekee yhteens‰: " +(leipah+tayteh+lisatayteh+kastikeh+juomah)+ " Ä");
 		Kuitti.tulostaTiedostoon(" Ostot: \n" + leipaname+ "\t\t"+leipah+",-\n"+taytename+"\t\t"+tayteh+",-\n"+lisataytename+"\t\t"+lisatayteh+",-\n"+kastikename+"\t\t"+kastikeh+",-\n"+juomaname+"\t\t"+juomah+ ",-\nVeloitettu:\t\t"+ (leipah+ tayteh+lisatayteh+kastikeh+juomah)
 		+ "Ä.");
 		} else {
 			System.out.println("ei sitten");
-		}
+			}
 		
-		
+		} 
 	}
 	
-} // Main p√§√§ttyy
+} // Main p‰‰ttyy
 
 
 
