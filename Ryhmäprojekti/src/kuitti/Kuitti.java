@@ -1,12 +1,9 @@
+package kuitti;
 import java.io.FileWriter;
 
 public class Kuitti {
 
 	static String kuitti = "src/resources/kuitti.txt";
-	
-	// int veloitus= ostosten hintojen haku tietokannasta
-	//tämä mainiin? tulostaTiedostoon("Ostot:\n " +  + " . Summa: " + veloitus + "€.");
-	
 	
 	public static void tulostaTiedostoon(String txt) {
 
