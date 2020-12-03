@@ -33,3 +33,24 @@ lisäpekoni		1,-
 valkosipulikastike		0,-
 coca-cola		2,-
 Veloitettu:		10€.
+Thu Dec 03 11:42:03 EET 2020 Ostot: 
+juustoleipä		6,-
+kanafile		2,-
+tuplajuusto		1,-
+majoneesi		0,-
+coca-cola		2,-
+Veloitettu:		11€.
+Thu Dec 03 19:48:28 EET 2020 Ostot: 
+juustoleipä		6,-
+paahtopaisti		3,-
+lisäpekoni		1,-
+valkosipulikastike		0,-
+kossuvissy		2,-
+Veloitettu:		12€.
+Thu Dec 03 19:56:37 EET 2020 Ostot: 
+Vaalea Leipä		5,-
+kanafile		2,-
+lisäpekoni		1,-
+valkosipulikastike		0,-
+Tumma olut		4,-
+Veloitettu:		12€.
