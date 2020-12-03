@@ -20,9 +20,9 @@ public class Main {
 		
 		if (vastaus.equalsIgnoreCase("y")) {
 			
+			Kirjautuminen.tiedot();
 			//tähän väliin kirjautuminen
 			
-			tietovienti.vietieto();
 		
 		}else {
 		Otsikko.tulostaOtsikko();
