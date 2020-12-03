@@ -47,7 +47,7 @@ public class Kirjautuminen {
 				if (vastausk.equals(kayttaja) || vastauss.equals(salas)) {
 					tietovienti.vietieto();
 				} else {
-					System.out.println("ei onnistu!");
+					System.out.println("Kirjautuminen epäonnistui!");
 				}
 
 				while (resultSet.next()) {
