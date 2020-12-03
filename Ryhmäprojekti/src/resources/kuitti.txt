@@ -1,0 +1,14 @@
+Thu Dec 03 09:15:21 EET 2020 Ostot: 
+Reikäleipä		5,-
+paahtopaisti	3,-
+lisäpekoni		1,-
+south west		0,-
+kossuvissy		2,-
+Veloitettu:		11€.
+Thu Dec 03 09:17:22 EET 2020 Ostot: 
+Vaalea Leipä		5,-
+paahtopaisti		3,-
+lisäpekoni		1,-
+south west		0,-
+kossuvissy		2,-
+Veloitettu:		11€.

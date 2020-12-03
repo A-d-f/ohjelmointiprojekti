@@ -1,5 +1,6 @@
 
 
+
 public class TuoteLuokka {
 	protected int tuoteID;
 	protected int hinta;
