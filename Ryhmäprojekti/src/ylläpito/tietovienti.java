@@ -1,3 +1,4 @@
+package yll‰pito;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -27,10 +28,13 @@ public static void vietieto() {
 		
 		Scanner in = new Scanner(System.in);
 		
+		System.out.println();
+		System.out.println("Lis‰‰ tuotteita:");
+		System.out.println();
 		System.out.println("Anna tuotteen nimi");
 		nimi  = in.nextLine();
 		
-		System.out.println("Anna tuoteryhm‰ 1: Leip‰	2: T‰yte	3: Jotain");
+		System.out.println("Anna tuoteryhm‰ 1: Leip‰	2: T‰yte	3: Lis‰t‰yte	4: Kastike	5: Juoma");
 		tuoteryhma  = Integer.parseInt(in.nextLine());
 		
 		System.out.println("Anna tuotteen hinta");

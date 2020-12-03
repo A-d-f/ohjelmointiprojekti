@@ -4,6 +4,7 @@ import kuitti.Kuitti;
 import otsikko.Otsikko;
 import tietojen_tuominen.tietotuonti;
 import tuoteluokat.*;
+import ylläpito.Kirjautuminen;
 
 
 public class Main {
@@ -20,9 +21,9 @@ public class Main {
 		
 		if (vastaus.equalsIgnoreCase("y")) {
 			
+			Kirjautuminen.tiedot();
 			//tähän väliin kirjautuminen
 			
-			tietovienti.vietieto();
 		
 		}else {
 		Otsikko.tulostaOtsikko();
