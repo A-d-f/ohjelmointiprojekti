@@ -43,12 +43,21 @@ public class Kirjautuminen {
 
 				// 4. Vastauksen k‰sittely
 				System.out.println("Kirjautuminen k‰ynniss‰");
-
-				if (vastausk.equals(kayttaja) || vastauss.equals(salas)) {
+				
+				if (vastausk.equals(kayttaja) && vastauss.equals(salas)) {
+					String jtn;
+					do {
 					tietovienti.vietieto();
+					System.out.println("Haluatko lis‰t‰ tuotteita? k/e");
+					jtn = in.nextLine();
+					if (jtn.equals("e")) {
+						System.out.println("Palataan tilausn‰kym‰‰n" + "\n");
+						break; }
+					} while (jtn.equalsIgnoreCase("k"));
+					
 				} else {
 					System.out.println("Kirjautuminen ep‰onnistui!");
-				}
+				}} 
 
 				while (resultSet.next()) {
 
@@ -57,7 +66,7 @@ public class Kirjautuminen {
 
 				}
 
-			}
+			
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		} finally {

@@ -1,4 +1,7 @@
 package kuitti;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
 import java.io.FileWriter;
 
 public class Kuitti {
@@ -9,12 +12,15 @@ public class Kuitti {
 
 		try {
 			java.util.Date date = new java.util.Date();
-			FileWriter fwriter = new FileWriter(kuitti, true);
+			FileWriter fwriter = new FileWriter(kuitti, false);
 			fwriter.write(date.toString());
 			fwriter.write(txt + "\n");
 			fwriter.close();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-	}	
-}
+	}
+	
+	} 
+	
+
