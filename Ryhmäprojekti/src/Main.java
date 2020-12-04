@@ -113,23 +113,24 @@ public class Main {
 		String juomaname = n;
 		
 		
-		//System.out.println("leipä: " + leipäkalorit + " täyte : " + täytekalorit + " yht: " + (leipäkalorit+täytekalorit));
+		System.out.println("Annoksen kalorit \nleipä: " + leipakalorit + " \ntäytteet : " + (taytekalorit+lisataytekalorit+kastikekalorit) + " \njuoma: "+ juomakalorit + " \nkalorit yht: " + (leipakalorit+taytekalorit+lisataytekalorit+kastikekalorit+juomakalorit));
 		
 //		  for (int i = 0 ; i < 1000; i++) { //looppi tietojen vientiÃ¤ varten
 //		  tietovienti.vietieto(); } 
 		
 		
-		System.out.println("\n" + "Haluatko tilata sämpylän?(k/e)?");
+		System.out.println("\n" + "Haluatko vahvistaa tilauksen?(k/e)?");
 		
 		vastaus = in.nextLine();
 		if (vastaus.equalsIgnoreCase("k")) {
-		System.out.println("tilaa");
+		System.out.println("tilaus käynnissä");
 		System.out.println("Ostoksesi tekee yhteensä: " +(leipah+tayteh+lisatayteh+kastikeh+juomah)+ " €");
 		Kuitti.tulostaTiedostoon(" Ostot: \n" + leipaname+ "\t\t"+leipah+",-\n"+taytename+"\t\t"+tayteh+",-\n"+lisataytename+"\t\t"+lisatayteh+",-\n"+kastikename+"\t\t"+kastikeh+",-\n"+juomaname+"\t\t"+juomah+ ",-\nVeloitettu:\t\t"+ (leipah+ tayteh+lisatayteh+kastikeh+juomah)
 		+ "€.");
 		} else {
 			System.out.println("ei sitten");
 			}
+		
 		
 		} 
 	}
