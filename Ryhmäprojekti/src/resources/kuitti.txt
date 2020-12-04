@@ -1,7 +1,7 @@
-Fri Dec 04 11:01:09 EET 2020 Ostot: 
-Vaalea Leipä		5,-
-kanafile		2,-
-lisäpekoni		1,-
-south west		0,-
-coca-cola		2,-
-Veloitettu:		10€.
+Fri Dec 04 13:54:55 EET 2020 Ostot: 
+Vaalea Leipä		4,-
+Paahtopaisti		3,-
+Lisäpekoni		1,-
+Southwest		0,-
+Tumma Olut		4,-
+Veloitettu:		12€.
