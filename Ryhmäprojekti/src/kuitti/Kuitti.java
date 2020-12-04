@@ -9,7 +9,7 @@ public class Kuitti {
 
 		try {
 			java.util.Date date = new java.util.Date();
-			FileWriter fwriter = new FileWriter(kuitti, true);
+			FileWriter fwriter = new FileWriter(kuitti, false);
 			fwriter.write(date.toString());
 			fwriter.write(txt + "\n");
 			fwriter.close();

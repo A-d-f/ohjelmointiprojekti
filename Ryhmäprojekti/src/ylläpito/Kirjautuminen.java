@@ -43,12 +43,20 @@ public class Kirjautuminen {
 
 				// 4. Vastauksen käsittely
 				System.out.println("Kirjautuminen käynnissä");
-
-				if (vastausk.equals(kayttaja) || vastauss.equals(salas)) {
+				
+				if (vastausk.equals(kayttaja) && vastauss.equals(salas)) {
+					String jtn;
+					do {
 					tietovienti.vietieto();
+					System.out.println("Haluatko lisätä tuotteita? k/e");
+					jtn = in.nextLine();
+					if (jtn.equals("e")) {
+						break; }
+					} while (jtn.equalsIgnoreCase("k"));
+					
 				} else {
 					System.out.println("Kirjautuminen epäonnistui!");
-				}
+				}} 
 
 				while (resultSet.next()) {
 
@@ -57,7 +65,7 @@ public class Kirjautuminen {
 
 				}
 
-			}
+			
 		} catch (Exception ex) {
 			ex.printStackTrace();
 		} finally {
