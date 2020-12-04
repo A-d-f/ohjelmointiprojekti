@@ -1,7 +1,7 @@
-Fri Dec 04 13:54:55 EET 2020 Ostot: 
+Fri Dec 04 14:01:33 EET 2020 Ostot: 
 Vaalea Leipä		4,-
 Paahtopaisti		3,-
 Lisäpekoni		1,-
-Southwest		0,-
-Tumma Olut		4,-
-Veloitettu:		12€.
+Valkosipuli		0,-
+Sprite Zero		2,-
+Veloitettu:		10€.
