@@ -1,7 +1,7 @@
-Fri Dec 04 10:09:42 EET 2020 Ostot: 
+Fri Dec 04 11:01:09 EET 2020 Ostot: 
 Vaalea Leipä		5,-
 kanafile		2,-
-aurajuusto		1,-
-valkosipulikastike		0,-
+lisäpekoni		1,-
+south west		0,-
 coca-cola		2,-
 Veloitettu:		10€.

@@ -51,6 +51,7 @@ public class Kirjautuminen {
 					System.out.println("Haluatko lis‰t‰ tuotteita? k/e");
 					jtn = in.nextLine();
 					if (jtn.equals("e")) {
+						System.out.println("Palataan tilausn‰kym‰‰n" + "\n");
 						break; }
 					} while (jtn.equalsIgnoreCase("k"));
 					
