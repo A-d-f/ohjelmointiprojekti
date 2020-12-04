@@ -14,18 +14,20 @@ public class Main {
 		int valinta;
 		String n;
 		int id, h, k;
-		
-		
+		String looppaa;
 		System.out.println("Tuletko asiakkaana(a) vai ylläpitäjänä(y)?");
 		vastaus=in.nextLine();
-		
+		String jatka;
 		if (vastaus.equalsIgnoreCase("y")) {
+			
+			
 			
 			Kirjautuminen.tiedot();
 			//tähän väliin kirjautuminen
 			
-		
-		}else {
+		}
+		do {	
+			
 		Otsikko.tulostaOtsikko();
 		
 		
@@ -118,24 +120,27 @@ public class Main {
 //		  for (int i = 0 ; i < 1000; i++) { //looppi tietojen vientiÃ¤ varten
 //		  tietovienti.vietieto(); } 
 		
-		
+		System.out.println("Ostoksesi tekee yhteensä: " +(leipah+tayteh+lisatayteh+kastikeh+juomah)+ " €" + "\n" + "\n");
 		System.out.println("\n" + "Haluatko vahvistaa tilauksen?(k/e)?");
 		
 		vastaus = in.nextLine();
 		if (vastaus.equalsIgnoreCase("k")) {
 		System.out.println("tilaus käynnissä");
-		System.out.println("Ostoksesi tekee yhteensä: " +(leipah+tayteh+lisatayteh+kastikeh+juomah)+ " €");
+		
 		Kuitti.tulostaTiedostoon(" Ostot: \n" + leipaname+ "\t\t"+leipah+",-\n"+taytename+"\t\t"+tayteh+",-\n"+lisataytename+"\t\t"+lisatayteh+",-\n"+kastikename+"\t\t"+kastikeh+",-\n"+juomaname+"\t\t"+juomah+ ",-\nVeloitettu:\t\t"+ (leipah+ tayteh+lisatayteh+kastikeh+juomah)
 		+ "€.");
 		} else {
 			System.out.println("ei sitten");
 			}
+		System.out.println("Haluatko tilata uudelleen? k/e");
 		
-		
-		} 
-	}
+		looppaa = in.nextLine();
+		} while (looppaa.equalsIgnoreCase("k")); 
+		System.out.println("Kiitos käynnistä, tervetuloa uudelleen");
+			}
+	} 
 	
-} // Main päättyy
+ // Main päättyy
 
 
 
