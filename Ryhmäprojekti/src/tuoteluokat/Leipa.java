@@ -1,6 +1,10 @@
 package tuoteluokat;
 
 public class Leipa extends TuoteLuokka {
+	private static int hinta;
+	 public static int leipahinta = hinta;
+	
+	 
 	 
 	public Leipa() {
 		tuoteID=0;
@@ -20,4 +24,5 @@ public class Leipa extends TuoteLuokka {
 	public void tulosta() {
 		System.out.println(tuoteID + " " + hinta + " " + kalorit + " " + nimi + " " + tuoteryhma + "\n");
 	}
+	
 }
