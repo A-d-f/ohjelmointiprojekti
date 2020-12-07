@@ -1,6 +1,5 @@
 package kayttoliittyma;
 
-import java.util.InputMismatchException;
 import java.util.Scanner;
 
 import kuitti.Kuitti;
@@ -18,10 +17,10 @@ public class Tilaus {
 	protected static int juomah, leipah, kastikeh, tayteh, lisatayteh, hinta1;
 
 	public static void Tilaaja() {
-		
+
 		Scanner in = new Scanner(System.in);
 		String vastaus;
-		int valinta ;
+		int valinta;
 		String n;
 		int id, h, k;
 		String looppaa;
@@ -36,27 +35,25 @@ public class Tilaus {
 		}
 
 		tietotuonti.set = 1;
-		
-		
-	
-		 while (true) {
-	         try {
-	    tietotuonti.tiedot();
-		System.out.println("valitse leivän numero");
-		valinta = Integer.parseInt(in.nextLine());
-		if( valinta >= 1 && valinta <= 4){
-            break;
-          }
-          System.out.println("et valinnut valitse listalla olevista tuotteista, valitse uudelleen.");
 
-       } catch (Exception e) {
-          System.out.println("et valinnut listalla olevista tuotteista, valitse uudelleen.");
-         }
-		 }
-		 
-		id = valinta;	
+		while (true) {
+			try {
+				tietotuonti.tiedot();
+				System.out.println("valitse leivän numero");
+				valinta = Integer.parseInt(in.nextLine());
+				if (valinta >= 1 && valinta <= tietotuonti.valintojenmaara ) {
+					break;
+				}
+				System.out.println("et valinnut valitse listalla olevista tuotteista, valitse uudelleen.");
+
+			} catch (Exception e) {
+				System.out.println("et valinnut listalla olevista tuotteista, valitse uudelleen.");
+			}
+		}
+
+		id = valinta;
 		tietotuonti.asetaValinta = id;
-		
+
 		System.out.println("Valinta:");
 		tietotuonti.tiedot1();
 		System.out.println("\n");
@@ -68,23 +65,22 @@ public class Tilaus {
 		String leipaname = n;
 
 		tietotuonti.set = 2;
-		
 
-		 while (true) {
-	         try {
-		tietotuonti.tiedot();
-		System.out.println("Valitse täytteen numero");
-		valinta = Integer.parseInt(in.nextLine());
-		if( valinta >= 5 && valinta <= 9){
-            break;
-          }
-          System.out.println("et valinnut valitse listalla olevista tuotteista, valitse uudelleen.");
+		while (true) {
+			try {
+				tietotuonti.tiedot();
+				System.out.println("Valitse täytteen numero");
+				valinta = Integer.parseInt(in.nextLine());
+				if (valinta >= 1 && valinta <= tietotuonti.valintojenmaara) {
+					break;
+				}
+				System.out.println("et valinnut valitse listalla olevista tuotteista, valitse uudelleen.");
 
-       } catch (Exception e) {
-          System.out.println("et valinnut listalla olevista tuotteista, valitse uudelleen.");
-         }
-		 }
-		
+			} catch (Exception e) {
+				System.out.println("et valinnut listalla olevista tuotteista, valitse uudelleen.");
+			}
+		}
+
 		id = valinta;
 		tietotuonti.asetaValinta = id;
 		System.out.println("Valinta:");
@@ -99,21 +95,21 @@ public class Tilaus {
 		String taytename = n;
 
 		tietotuonti.set = 3;
-		 while (true) {
-	         try {
-		tietotuonti.tiedot();
-		System.out.println("Valitse lisätäytteen numero");
-		valinta = Integer.parseInt(in.nextLine());
-		if( valinta >= 10 && valinta <= 13){
-            break;
-          }
-          System.out.println("et valinnut valitse listalla olevista tuotteista, valitse uudelleen.");
+		while (true) {
+			try {
+				tietotuonti.tiedot();
+				System.out.println("Valitse lisätäytteen numero");
+				valinta = Integer.parseInt(in.nextLine());
+				if (valinta >= 1 && valinta <= tietotuonti.valintojenmaara) {
+					break;
+				}
+				System.out.println("et valinnut valitse listalla olevista tuotteista, valitse uudelleen.");
 
-       } catch (Exception e) {
-          System.out.println("et valinnut listalla olevista tuotteista, valitse uudelleen.");
-         }
-		 }
-		
+			} catch (Exception e) {
+				System.out.println("et valinnut listalla olevista tuotteista, valitse uudelleen.");
+			}
+		}
+
 		id = valinta;
 		tietotuonti.asetaValinta = id;
 		System.out.println("Valinta:");
@@ -128,21 +124,21 @@ public class Tilaus {
 		String lisataytename = n;
 
 		tietotuonti.set = 4;
-		 while (true) {
-	         try {
-		tietotuonti.tiedot();
-		System.out.println("Valitse kastikkeen numero");
-		valinta = Integer.parseInt(in.nextLine());
-		if( valinta >= 14 && valinta <= 17){
-            break;
-          }
-          System.out.println("et valinnut valitse listalla olevista tuotteista, valitse uudelleen.");
+		while (true) {
+			try {
+				tietotuonti.tiedot();
+				System.out.println("Valitse kastikkeen numero");
+				valinta = Integer.parseInt(in.nextLine());
+				if (valinta >= 1 && valinta <= tietotuonti.valintojenmaara) {
+					break;
+				}
+				System.out.println("et valinnut valitse listalla olevista tuotteista, valitse uudelleen.");
 
-       } catch (Exception e) {
-          System.out.println("et valinnut listalla olevista tuotteista, valitse uudelleen.");
-         }
-		 }
-		 
+			} catch (Exception e) {
+				System.out.println("et valinnut listalla olevista tuotteista, valitse uudelleen.");
+			}
+		}
+
 		id = valinta;
 		tietotuonti.asetaValinta = id;
 		System.out.println("Valinta:");
@@ -158,19 +154,19 @@ public class Tilaus {
 
 		tietotuonti.set = 5;
 		while (true) {
-	         try {
-		tietotuonti.tiedot();
-		System.out.println("Valitse juoman numero");
-		valinta = Integer.parseInt(in.nextLine());
-		if( valinta >= 18 && valinta <= 22){
-            break;
-          }
-          System.out.println("et valinnut valitse listalla olevista tuotteista, valitse uudelleen.");
+			try {
+				tietotuonti.tiedot();
+				System.out.println("Valitse juoman numero");
+				valinta = Integer.parseInt(in.nextLine());
+				if (valinta >= 1 && valinta <= tietotuonti.valintojenmaara) {
+					break;
+				}
+				System.out.println("et valinnut valitse listalla olevista tuotteista, valitse uudelleen.");
 
-       } catch (Exception e) {
-          System.out.println("et valinnut listalla olevista tuotteista, valitse uudelleen.");
-         }
-		 }
+			} catch (Exception e) {
+				System.out.println("et valinnut listalla olevista tuotteista, valitse uudelleen.");
+			}
+		}
 		id = valinta;
 		tietotuonti.asetaValinta = id;
 		System.out.println("Valinta:");
@@ -190,38 +186,38 @@ public class Tilaus {
 				+ (taytekalorit + lisataytekalorit + kastikekalorit) + " \njuoma: " + juomakalorit + " \nkalorit yht: "
 				+ (leipakalorit + taytekalorit + lisataytekalorit + kastikekalorit + juomakalorit));
 
-
-		System.out.println("Leipäsi hinta on: " +(juomah + leipah + kastikeh + lisatayteh + tayteh)+ " €" + "\n" + "\n");
+		System.out.println(
+				"Leipäsi hinta on: " + (juomah + leipah + kastikeh + lisatayteh + tayteh) + " €" + "\n" + "\n");
 		System.out.println("\n" + "Haluatko vahvistaa tilauksen?(k/e)?");
-		
+
 		vastaus = in.nextLine();
 		if (vastaus.equalsIgnoreCase("k")) {
-		System.out.println("tilaus käynnissä");
-		
-		Kuitti.tulostaTiedostoon(" Leipä: \n" + leipaname+ "\t\t"+leipah+",-\n"+taytename+"\t\t"+tayteh+",-\n"+lisataytename+"\t\t"+lisatayteh+",-\n"+kastikename+"\t\t"+kastikeh+",-\n"+juomaname+"\t\t"+juomah+ ",-");
-		
-		
+			System.out.println("tilaus käynnissä");
+
+			Kuitti.tulostaTiedostoon("Leipä: \n" + leipaname + "\t\t" + leipah + ",-\n" + taytename + "\t\t" + tayteh
+					+ ",-\n" + lisataytename + "\t\t" + lisatayteh + ",-\n" + kastikename + "\t\t" + kastikeh + ",-\n"
+					+ juomaname + "\t\t" + juomah + ",-" + "\n" + "Leivän hinta:" + "\t\t"
+					+ (juomah + leipah + kastikeh + lisatayteh + tayteh) + " € \n");
+			getHinta();
+
 		} else {
 			System.out.println("ei sitten");
-			}
-				
-				
-			} //main loppuu
+		}
+
+	} // main loppuu
 //	  for (int i = 0 ; i < 1000; i++) { //looppi tietojen vientiÃ¤ varten
 //	  tietovienti.vietieto(); } 
-	
 
-	
 	public static int getHinta() {
-		int yhteensa=(juomah + leipah + kastikeh + lisatayteh + tayteh);
-		hinta1 = hinta1+yhteensa;
+		int yhteensa = (juomah + leipah + kastikeh + lisatayteh + tayteh);
+		hinta1 = hinta1 + yhteensa;
 		return hinta1;
 
 	}
+
 	public static int getHinta1() {
-		int summa=hinta1;
+		int summa = hinta1;
 		return summa;
 	}
-	
 
 }
