@@ -1,7 +1,7 @@
-Fri Dec 04 14:01:33 EET 2020 Ostot: 
-Vaalea Leipä		4,-
+Mon Dec 07 10:53:19 EET 2020 Ostot: 
+Hunajakaura		4,-
 Paahtopaisti		3,-
 Lisäpekoni		1,-
-Valkosipuli		0,-
-Sprite Zero		2,-
-Veloitettu:		10€.
+Majoneesi		0,-
+Artesaaniolut		5,-
+Veloitettu:		13€.
