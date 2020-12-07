@@ -28,7 +28,8 @@ private static int tuoteryhma;
 private static String nimi1;
 private static int hinta1;
 private static int kalorit1;
-
+public static int valintanro;
+public static int valintojenmaara;
 
 static String valinta;
 static String valitse;
@@ -67,17 +68,18 @@ try {
 
 	
 	// 4. Vastauksen käsittely
-	System.out.println("Num\tNimi\t\tHinta\tKalorit");
-	
+	System.out.println("Nro\tNimi\t\tHinta\tKalorit");
+	valintojenmaara=0;
 	
 	while (resultSet.next()) {
-		
+		valintojenmaara++;
+		valintanro = resultSet.getInt("valintanro");
 		tuote_id = resultSet.getInt("tuote_id");
 		nimi = resultSet.getString("nimi");
 		hinta = resultSet.getInt("hinta");
 		kalorit = resultSet.getInt("kalorit");
 		tuoteryhma = resultSet.getInt("tuoteryhma");
-		System.out.println(tuote_id + "\t" + nimi + "\t" + hinta + "\t" + kalorit);
+		System.out.println(valintanro + "\t" + nimi + "\t" + hinta + "\t" + kalorit);
 	}
 	
 	
@@ -106,10 +108,10 @@ try {
 	// 2. MySQL-kysely
 	statement = connection.createStatement();
 	int valitse = asetaValinta;
-		
+	int ryhm = set;	
 	
 	
-	String query = "SELECT * FROM ryhmä10_taulu where tuote_id =" + valitse;
+	String query = "SELECT * FROM ryhmä10_taulu where valintanro =" + valitse + " AND tuoteryhma =" + ryhm;
 	
 	
 	
@@ -121,12 +123,14 @@ try {
 	
 	while (resultSet.next()) {
 		
+		valintanro = resultSet.getInt("valintanro");
 		tuote_id = resultSet.getInt("tuote_id");
 		nimi1 = resultSet.getString("nimi");
 		hinta1 = resultSet.getInt("hinta");
 		kalorit1 = resultSet.getInt("kalorit");
 		tuoteryhma = resultSet.getInt("tuoteryhma");
-		System.out.println(tuote_id + "\t" + nimi1 + "\t" + hinta1 + "\t" + kalorit1);
+		
+		System.out.println(valintanro + "\t" + nimi1 + "\t" + hinta1 + "\t" + kalorit1);
 	}
 	
 	
