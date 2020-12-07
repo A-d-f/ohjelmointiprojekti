@@ -41,7 +41,7 @@ public class Tilaus {
 				tietotuonti.tiedot();
 				System.out.println("valitse leivän numero");
 				valinta = Integer.parseInt(in.nextLine());
-				if (valinta >= 1 && valinta <= 4 ) {
+				if (valinta >= 1 && valinta <= tietotuonti.valintojenmaara ) {
 					break;
 				}
 				System.out.println("et valinnut valitse listalla olevista tuotteista, valitse uudelleen.");
@@ -71,7 +71,7 @@ public class Tilaus {
 				tietotuonti.tiedot();
 				System.out.println("Valitse täytteen numero");
 				valinta = Integer.parseInt(in.nextLine());
-				if (valinta >= 5 && valinta <= 9) {
+				if (valinta >= 1 && valinta <= tietotuonti.valintojenmaara) {
 					break;
 				}
 				System.out.println("et valinnut valitse listalla olevista tuotteista, valitse uudelleen.");
@@ -100,7 +100,7 @@ public class Tilaus {
 				tietotuonti.tiedot();
 				System.out.println("Valitse lisätäytteen numero");
 				valinta = Integer.parseInt(in.nextLine());
-				if (valinta >= 10 && valinta <= 13) {
+				if (valinta >= 1 && valinta <= tietotuonti.valintojenmaara) {
 					break;
 				}
 				System.out.println("et valinnut valitse listalla olevista tuotteista, valitse uudelleen.");
@@ -129,7 +129,7 @@ public class Tilaus {
 				tietotuonti.tiedot();
 				System.out.println("Valitse kastikkeen numero");
 				valinta = Integer.parseInt(in.nextLine());
-				if (valinta >= 14 && valinta <= 17) {
+				if (valinta >= 1 && valinta <= tietotuonti.valintojenmaara) {
 					break;
 				}
 				System.out.println("et valinnut valitse listalla olevista tuotteista, valitse uudelleen.");
@@ -158,7 +158,7 @@ public class Tilaus {
 				tietotuonti.tiedot();
 				System.out.println("Valitse juoman numero");
 				valinta = Integer.parseInt(in.nextLine());
-				if (valinta >= 18 && valinta <= 22) {
+				if (valinta >= 1 && valinta <= tietotuonti.valintojenmaara) {
 					break;
 				}
 				System.out.println("et valinnut valitse listalla olevista tuotteista, valitse uudelleen.");
