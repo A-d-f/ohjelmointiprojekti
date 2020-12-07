@@ -11,7 +11,7 @@ public class Main {
 		Scanner input = new Scanner(System.in);
 //		  for (int i = 0 ; i < 1000; i++) { //looppi tietojen vientiÃ¤ varten
 //		  tietovienti.vietieto(); } 
-		try {
+
 			
 		do {	
 		Tilaus.Tilaaja(); 
@@ -20,15 +20,11 @@ public class Main {
 		looppaa = input.nextLine();
 		} while (looppaa.equalsIgnoreCase("k"));
 			
-		
-		} catch (Exception e) {
-			System.out.println("Joku meni vikaan");
-		}
+
 		System.out.println("Kiitos käynnistä, tervetuloa uudelleen");
-	}
-	
+
 } // Main päättyy
-	
+}	
 
 
 
