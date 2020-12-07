@@ -22,7 +22,7 @@ public class Main {
 		looppaa = input.nextLine();
 		} while (looppaa.equalsIgnoreCase("k"));
 			
-		Kuitti.tulostaTiedostoon("Yhteensä:\t\t" +Tilaus.getHinta1()+" €");
+		Kuitti.tulostaTiedostoon("Yhteensä:\t\t" + Tilaus.getHinta1() +" €");
 		LueKuitti.lueTiedostosta("src/resources/kuitti.txt");
 		System.out.println("Kiitos käynnistä, tervetuloa uudelleen");
 
