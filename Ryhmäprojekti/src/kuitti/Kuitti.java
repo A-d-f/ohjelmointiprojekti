@@ -11,10 +11,19 @@ public class Kuitti {
 	public static void tulostaTiedostoon(String txt) {
 
 		try {
+			FileWriter fwriter = new FileWriter(kuitti, true);
+			fwriter.write(txt + "\n");
+			fwriter.close();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	public static void TulostaPaivamaara() {
+		try {
 			java.util.Date date = new java.util.Date();
 			FileWriter fwriter = new FileWriter(kuitti, false);
 			fwriter.write(date.toString());
-			fwriter.write(txt + "\n");
+			fwriter.write("\n");
 			fwriter.close();
 		} catch (Exception e) {
 			e.printStackTrace();

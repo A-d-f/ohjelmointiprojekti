@@ -15,7 +15,7 @@ import tuoteluokat.Tayte;
 import ylläpito.Kirjautuminen;
 
 public class Tilaus {
-	protected static int juomah, leipah, kastikeh, tayteh, lisatayteh;
+	protected static int juomah, leipah, kastikeh, tayteh, lisatayteh, hinta1;
 
 	public static void Tilaaja() {
 		
@@ -191,17 +191,16 @@ public class Tilaus {
 				+ (leipakalorit + taytekalorit + lisataytekalorit + kastikekalorit + juomakalorit));
 
 
-		
-		System.out.println("Ostoksesi tekee yhteensä: " +(leipah+tayteh+lisatayteh+kastikeh+juomah)+ " €" + "\n" + "\n");
+		System.out.println("Leipäsi hinta on: " +(juomah + leipah + kastikeh + lisatayteh + tayteh)+ " €" + "\n" + "\n");
 		System.out.println("\n" + "Haluatko vahvistaa tilauksen?(k/e)?");
 		
 		vastaus = in.nextLine();
 		if (vastaus.equalsIgnoreCase("k")) {
 		System.out.println("tilaus käynnissä");
 		
-		Kuitti.tulostaTiedostoon(" Ostot: \n" + leipaname+ "\t\t"+leipah+",-\n"+taytename+"\t\t"+tayteh+",-\n"+lisataytename+"\t\t"+lisatayteh+",-\n"+kastikename+"\t\t"+kastikeh+",-\n"+juomaname+"\t\t"+juomah+ ",-\nVeloitettu:\t\t"+ (leipah+ tayteh+lisatayteh+kastikeh+juomah)
-		+ "€.");
-		LueKuitti.lueTiedostosta("src/resources/kuitti.txt");
+		Kuitti.tulostaTiedostoon(" Leipä: \n" + leipaname+ "\t\t"+leipah+",-\n"+taytename+"\t\t"+tayteh+",-\n"+lisataytename+"\t\t"+lisatayteh+",-\n"+kastikename+"\t\t"+kastikeh+",-\n"+juomaname+"\t\t"+juomah+ ",-");
+		
+		
 		} else {
 			System.out.println("ei sitten");
 			}
@@ -214,10 +213,15 @@ public class Tilaus {
 
 	
 	public static int getHinta() {
-		int hinta1=0;
-		hinta1 = (hinta1 + juomah + leipah + kastikeh + lisatayteh + tayteh);
+		int yhteensa=(juomah + leipah + kastikeh + lisatayteh + tayteh);
+		hinta1 = hinta1+yhteensa;
 		return hinta1;
 
 	}
+	public static int getHinta1() {
+		int summa=hinta1;
+		return summa;
+	}
+	
 
 }
