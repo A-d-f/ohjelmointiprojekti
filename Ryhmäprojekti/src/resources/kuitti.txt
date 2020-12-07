@@ -1,9 +1,10 @@
-Mon Dec 07 13:46:42 EET 2020
+Mon Dec 07 14:30:46 EET 2020
 Leipä: 
-Gluteeniton		5,-
-Tonnikala		3,-
-Lisäpekoni		1,-
-Vegaaninen		0,-
-Artesaaniolut		5,-
-Leivän hinta:		14 € 
+Ruisleipä		3,-
+valkosipuli		0,-
+Ei lisätäytettä		0,-
+Sriracha(hot)		0,-
+Pillimehu		2,-
+Leivän hinta:		5 € 
 
+Yhteensä:		5 €
