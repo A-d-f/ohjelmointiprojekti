@@ -8,13 +8,13 @@ import java.util.Scanner;
 
 public class Kirjautuminen {
 
-	static Connection connection = null;
-	static Statement statement = null;
-	static ResultSet resultSet = null;
-	static String db = "trtkp20a3";
-	static String url = "jdbc:mysql://shell.hamk.fi/" + db + "?useSSL=false";
-	static String username = "trtkp20a3";
-	static String password = "trtkp20a3passwd";
+	private static Connection connection = null;
+	private static Statement statement = null;
+	private static ResultSet resultSet = null;
+	private static String db = "trtkp20a3";
+	private static String url = "jdbc:mysql://shell.hamk.fi/" + db + "?useSSL=false";
+	private static String username = "trtkp20a3";
+	private static String password = "trtkp20a3passwd";
 	private static String ktunnus;
 	private static String salasana;
 
