@@ -17,6 +17,6 @@ public class Tayte extends TuoteLuokka {
 		tuoteryhma=2;
 	}
 	public void tulosta() {
-	System.out.println(tuoteID + " " + hinta + " " + kalorit + " " + nimi + " " + tuoteryhma + "\n");
-}
+		System.out.println("Nimi\t\tHinta\t\tKalorit\n" + nimi+ "\t" + hinta + "\t\t" + kalorit + "\n");
+	}
 }
