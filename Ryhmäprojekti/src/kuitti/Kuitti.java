@@ -6,7 +6,7 @@ import java.io.FileWriter;
 
 public class Kuitti {
 
-	static String kuitti = "src/resources/kuitti.txt";
+	private static String kuitti = "src/resources/kuitti.txt";
 	
 	public static void tulostaTiedostoon(String txt) {
 
