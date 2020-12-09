@@ -32,6 +32,7 @@ public class Main {
 		} while (!looppaa.equals("k") || !looppaa.equals("e"));
 
 		Kuitti.tulostaTiedostoon("Yhteensä:\t\t" + Tilaus.getHinta1() + " €");
+		System.out.println("Ostoksesi kuitti:");
 		LueKuitti.lueTiedostosta("src/resources/kuitti.txt");
 		System.out.println("Kiitos käynnistä, tervetuloa uudelleen");
 
