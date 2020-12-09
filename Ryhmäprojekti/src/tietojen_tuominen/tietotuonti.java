@@ -14,10 +14,10 @@ static ResultSet resultSet = null;
 public static int set;
 public static int asetaValinta;
 // Yhteyden tiedot
-static String db = "trtkp20a3";
-static String url = "jdbc:mysql://shell.hamk.fi/"+db+"?useSSL=false";
-static String username = "trtkp20a3";
-static String password = "trtkp20a3passwd";
+private static String db = "trtkp20a3";
+private static String url = "jdbc:mysql://shell.hamk.fi/"+db+"?useSSL=false";
+private static String username = "trtkp20a3";
+private static String password = "trtkp20a3passwd";
 
 // Tietokannan taulun kentät tulostusta varten
 private static int tuote_id;
@@ -28,7 +28,7 @@ private static int tuoteryhma;
 private static String nimi1;
 private static int hinta1;
 private static int kalorit1;
-public static int valintanro;
+private static int valintanro;
 public static int vaihtoehtojenmaara;
 
 static String valinta;

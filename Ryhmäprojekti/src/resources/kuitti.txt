@@ -1,1 +1,10 @@
-Wed Dec 09 10:05:47 EET 2020
+Wed Dec 09 10:43:56 EET 2020
+Leipä: 
+Gluteeniton		5,-
+Villisika		5,-
+Aurajuusto		1,-
+Vegaaninen		0,-
+Pillimehu		2,-
+Leivän hinta:		13 € 
+
+Yhteensä:		13 €
