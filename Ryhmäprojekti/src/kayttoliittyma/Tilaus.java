@@ -41,7 +41,7 @@ public class Tilaus {
 				tietotuonti.tiedot();
 				System.out.println("valitse leivän numero");
 				valinta = Integer.parseInt(in.nextLine());
-				if (valinta >= 1 && valinta <= tietotuonti.valintojenmaara ) {
+				if (valinta >= 1 && valinta <= tietotuonti.vaihtoehtojenmaara ) {
 					break;
 				}
 				System.out.println("et valinnut valitse listalla olevista tuotteista, valitse uudelleen.");
@@ -56,10 +56,10 @@ public class Tilaus {
 
 		System.out.println("Valinta:");
 		tietotuonti.tiedot1();
-		System.out.println("\n");
 		Leipa leipa = new Leipa(id, n = tietotuonti.getNimi(), h = tietotuonti.gethinta(),
 				k = tietotuonti.getKalorit());
-		// leipa.tulosta();
+		leipa.tulosta();
+		
 		int leipakalorit = k;
 		leipah = h;
 		String leipaname = n;
@@ -71,7 +71,7 @@ public class Tilaus {
 				tietotuonti.tiedot();
 				System.out.println("Valitse täytteen numero");
 				valinta = Integer.parseInt(in.nextLine());
-				if (valinta >= 1 && valinta <= tietotuonti.valintojenmaara) {
+				if (valinta >= 1 && valinta <= tietotuonti.vaihtoehtojenmaara) {
 					break;
 				}
 				System.out.println("et valinnut valitse listalla olevista tuotteista, valitse uudelleen.");
@@ -85,11 +85,11 @@ public class Tilaus {
 		tietotuonti.asetaValinta = id;
 		System.out.println("Valinta:");
 		tietotuonti.tiedot1();
-		System.out.println("\n");
+		
 
 		Tayte tayte = new Tayte(id, n = tietotuonti.getNimi(), h = tietotuonti.gethinta(),
 				k = tietotuonti.getKalorit());
-		// tayte.tulosta();
+		tayte.tulosta();
 		int taytekalorit = k;
 		tayteh = h;
 		String taytename = n;
@@ -100,7 +100,7 @@ public class Tilaus {
 				tietotuonti.tiedot();
 				System.out.println("Valitse lisätäytteen numero");
 				valinta = Integer.parseInt(in.nextLine());
-				if (valinta >= 1 && valinta <= tietotuonti.valintojenmaara) {
+				if (valinta >= 1 && valinta <= tietotuonti.vaihtoehtojenmaara) {
 					break;
 				}
 				System.out.println("et valinnut valitse listalla olevista tuotteista, valitse uudelleen.");
@@ -114,11 +114,11 @@ public class Tilaus {
 		tietotuonti.asetaValinta = id;
 		System.out.println("Valinta:");
 		tietotuonti.tiedot1();
-		System.out.println("\n");
+		
 
 		LisaTayte lisatayte = new LisaTayte(id, n = tietotuonti.getNimi(), h = tietotuonti.gethinta(),
 				k = tietotuonti.getKalorit());
-		// lisatayte.tulosta();
+		lisatayte.tulosta();
 		int lisataytekalorit = k;
 		lisatayteh = h;
 		String lisataytename = n;
@@ -129,7 +129,7 @@ public class Tilaus {
 				tietotuonti.tiedot();
 				System.out.println("Valitse kastikkeen numero");
 				valinta = Integer.parseInt(in.nextLine());
-				if (valinta >= 1 && valinta <= tietotuonti.valintojenmaara) {
+				if (valinta >= 1 && valinta <= tietotuonti.vaihtoehtojenmaara) {
 					break;
 				}
 				System.out.println("et valinnut valitse listalla olevista tuotteista, valitse uudelleen.");
@@ -143,11 +143,11 @@ public class Tilaus {
 		tietotuonti.asetaValinta = id;
 		System.out.println("Valinta:");
 		tietotuonti.tiedot1();
-		System.out.println("\n");
+		
 
 		Kastike kastike = new Kastike(id, n = tietotuonti.getNimi(), h = tietotuonti.gethinta(),
 				k = tietotuonti.getKalorit());
-		// kastike.tulosta();
+		kastike.tulosta();
 		int kastikekalorit = k;
 		kastikeh = h;
 		String kastikename = n;
@@ -158,7 +158,7 @@ public class Tilaus {
 				tietotuonti.tiedot();
 				System.out.println("Valitse juoman numero");
 				valinta = Integer.parseInt(in.nextLine());
-				if (valinta >= 1 && valinta <= tietotuonti.valintojenmaara) {
+				if (valinta >= 1 && valinta <= tietotuonti.vaihtoehtojenmaara) {
 					break;
 				}
 				System.out.println("et valinnut valitse listalla olevista tuotteista, valitse uudelleen.");
@@ -171,24 +171,24 @@ public class Tilaus {
 		tietotuonti.asetaValinta = id;
 		System.out.println("Valinta:");
 		tietotuonti.tiedot1();
-		System.out.println("\n");
+		
 
 		Juoma juoma = new Juoma(id, n = tietotuonti.getNimi(), h = tietotuonti.gethinta(),
 				k = tietotuonti.getKalorit());
-		// juoma.tulosta();
+		juoma.tulosta();
 
 		int juomakalorit = k;
 		juomah = h;
 
 		String juomaname = n;
-
+		
 		System.out.println("Annoksen kalorit \nleipä: " + leipakalorit + " \ntäytteet : "
 				+ (taytekalorit + lisataytekalorit + kastikekalorit) + " \njuoma: " + juomakalorit + " \nkalorit yht: "
 				+ (leipakalorit + taytekalorit + lisataytekalorit + kastikekalorit + juomakalorit));
 
 		System.out.println(
 				"Leipäsi hinta on: " + (juomah + leipah + kastikeh + lisatayteh + tayteh) + " €" + "\n" + "\n");
-		System.out.println("\n" + "Haluatko vahvistaa tilauksen?(k/e)?");
+		System.out.println("Haluatko vahvistaa tilauksen?(k/e)?");
 
 		vastaus = in.nextLine();
 		if (vastaus.equalsIgnoreCase("k")) {
