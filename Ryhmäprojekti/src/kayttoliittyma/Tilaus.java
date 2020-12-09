@@ -190,19 +190,27 @@ public class Tilaus {
 				"Leipäsi hinta on: " + (juomah + leipah + kastikeh + lisatayteh + tayteh) + " €" + "\n" + "\n");
 		System.out.println("Haluatko vahvistaa tilauksen?(k/e)?");
 
-		vastaus = in.nextLine();
+		
+		do {
+			vastaus = in.nextLine();
 		if (vastaus.equalsIgnoreCase("k")) {
-			System.out.println("tilaus käynnissä");
+			System.out.println("tilaus käynnissä\n");
 
 			Kuitti.tulostaTiedostoon("Leipä: \n" + leipaname + "\t\t" + leipah + ",-\n" + taytename + "\t\t" + tayteh
 					+ ",-\n" + lisataytename + "\t\t" + lisatayteh + ",-\n" + kastikename + "\t\t" + kastikeh + ",-\n"
 					+ juomaname + "\t\t" + juomah + ",-" + "\n" + "Leivän hinta:" + "\t\t"
 					+ (juomah + leipah + kastikeh + lisatayteh + tayteh) + " € \n");
 			getHinta();
-
-		} else {
+			break;
+		} else if (vastaus.equals("e")){
 			System.out.println("ei sitten");
+			break;
 		}
+		else {
+			System.out.println("Valitse k/e");
+		}
+		} while (!vastaus.equals("k") || !vastaus.equals("e"));
+		
 
 	} // main loppuu
 //	  for (int i = 0 ; i < 1000; i++) { //looppi tietojen vientiÃ¤ varten
