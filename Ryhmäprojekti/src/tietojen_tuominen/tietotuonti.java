@@ -29,7 +29,7 @@ private static String nimi1;
 private static int hinta1;
 private static int kalorit1;
 public static int valintanro;
-public static int valintojenmaara;
+public static int vaihtoehtojenmaara;
 
 static String valinta;
 static String valitse;
@@ -69,10 +69,10 @@ try {
 	
 	// 4. Vastauksen käsittely
 	System.out.println("Nro\tNimi\t\tHinta\tKalorit");
-	valintojenmaara=0;
+	vaihtoehtojenmaara=0;
 	
 	while (resultSet.next()) {
-		valintojenmaara++;
+		vaihtoehtojenmaara++;
 		valintanro = resultSet.getInt("valintanro");
 		tuote_id = resultSet.getInt("tuote_id");
 		nimi = resultSet.getString("nimi");
@@ -119,7 +119,7 @@ try {
 	resultSet = statement.executeQuery(query);
 	
 	// 4. Vastauksen käsittely
-	System.out.println("Num\tNimi\t\tHinta\tKalorit");
+//	System.out.println("Num\tNimi\t\tHinta\tKalorit");
 	
 	while (resultSet.next()) {
 		
@@ -130,7 +130,7 @@ try {
 		kalorit1 = resultSet.getInt("kalorit");
 		tuoteryhma = resultSet.getInt("tuoteryhma");
 		
-		System.out.println(valintanro + "\t" + nimi1 + "\t" + hinta1 + "\t" + kalorit1);
+//		System.out.println(valintanro + "\t" + nimi1 + "\t" + hinta1 + "\t" + kalorit1);
 	}
 	
 	

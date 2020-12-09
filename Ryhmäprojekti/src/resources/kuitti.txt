@@ -1,10 +1,1 @@
-Mon Dec 07 14:30:46 EET 2020
-Leipä: 
-Ruisleipä		3,-
-valkosipuli		0,-
-Ei lisätäytettä		0,-
-Sriracha(hot)		0,-
-Pillimehu		2,-
-Leivän hinta:		5 € 
-
-Yhteensä:		5 €
+Wed Dec 09 10:05:47 EET 2020
